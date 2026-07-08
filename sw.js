@@ -1,5 +1,5 @@
 // 오프라인 캐싱 — 중국 현지에서 데이터 없이도 실행되도록
-const CACHE = "chtrip-v2";
+const CACHE = "chtrip-v3";
 const ASSETS = [
   "./",
   "./index.html",
@@ -10,8 +10,21 @@ const ASSETS = [
   "./icon.svg",
 ];
 
+// 설치 시: 앱 파일 + 모든 mp3(audio/manifest.json 기준)를 미리 다운로드 → 오프라인 100% 재생
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  e.waitUntil((async () => {
+    const c = await caches.open(CACHE);
+    await c.addAll(ASSETS);
+    try {
+      const res = await fetch("audio/manifest.json", { cache: "no-cache" });
+      const files = await res.json();
+      // 하나 실패해도 전체가 안 깨지게 개별 처리
+      await Promise.all(files.map((f) =>
+        c.add(`audio/${f}`).catch(() => {})
+      ));
+    } catch (_) { /* manifest 없으면 런타임 캐싱으로 폴백 */ }
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener("activate", (e) => {

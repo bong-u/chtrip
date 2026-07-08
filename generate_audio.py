@@ -45,6 +45,14 @@ async def synth(pid, hanzi):
     return "done"
 
 
+def write_manifest(phrases):
+    # 서비스워커가 설치 시 전부 미리 캐시할 mp3 목록
+    import json
+    files = [f"{pid}.mp3" for pid, _ in phrases if (OUT / f"{pid}.mp3").exists()]
+    (OUT / "manifest.json").write_text(json.dumps(files, ensure_ascii=False), encoding="utf-8")
+    return files
+
+
 async def main():
     OUT.mkdir(exist_ok=True)
     phrases = load_phrases()
@@ -65,7 +73,9 @@ async def main():
             fail += 1
             print(f"❌ {pid} 실패: {e}")
 
+    files = write_manifest(phrases)
     print(f"\n완료 — 생성 {done} / 건너뜀 {skip} / 실패 {fail}")
+    print(f"manifest.json 갱신: {len(files)}개 mp3")
     print(f"음성 위치: {OUT}  (목소리: {VOICE})")
 
 
