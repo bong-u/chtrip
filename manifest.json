@@ -1,0 +1,14 @@
+{
+  "name": "중국 여행회화",
+  "short_name": "여행회화",
+  "description": "성조 발음 들으며 암기하는 중국 여행 회화",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff8f0",
+  "theme_color": "#e63946",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
