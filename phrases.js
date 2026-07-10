@@ -48,6 +48,16 @@ window.PHRASES = [
   { id: 81, cat: "traffic", ko: "공항까지 가주세요",  pinyin: "qù jīchǎng",             hanzi: "去机场" },
   { id: 83, cat: "traffic", ko: "여기서 세워주세요",  pinyin: "zhèlǐ tíng",             hanzi: "这里停" },
 
+  // ── 시간 ─────────────────────────────
+  { id: 100, cat: "time", ko: "지금 몇 시예요?",       pinyin: "xiànzài jǐ diǎn?",              hanzi: "现在几点？" },
+  { id: 101, cat: "time", ko: "대략 얼마나 걸려요?",    pinyin: "dàgài yào duō jiǔ?",            hanzi: "大概要多久？" },
+  { id: 102, cat: "time", ko: "10시 / 10시 20분",      pinyin: "shí diǎn, shí diǎn èrshí fēn",   hanzi: "十点，十点二十分" },
+  { id: 103, cat: "time", ko: "2시는 两点 (二点 아님)", pinyin: "liǎng diǎn",                    hanzi: "两点" },
+  { id: 104, cat: "time", ko: "10시 반 / 10시 15분",   pinyin: "shí diǎn bàn, shí diǎn yí kè",   hanzi: "十点半，十点一刻" },
+  { id: 105, cat: "time", ko: "20분 뒤",               pinyin: "èrshí fēnzhōng hòu",            hanzi: "二十分钟后" },
+  { id: 106, cat: "time", ko: "1시간 / 반 시간",       pinyin: "yí ge xiǎoshí, bàn ge xiǎoshí",  hanzi: "一个小时，半个小时" },
+  { id: 107, cat: "time", ko: "대략 20분요",           pinyin: "dàgài èrshí fēnzhōng",          hanzi: "大概二十分钟" },
+
 ];
 
 window.CATEGORIES = [
@@ -56,4 +66,5 @@ window.CATEGORIES = [
   { key: "shopping",  label: "🛍️ 쇼핑" },
   { key: "food",      label: "🍜 음식점" },
   { key: "traffic",   label: "🚕 교통" },
+  { key: "time",      label: "⏰ 시간" },
 ];
