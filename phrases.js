@@ -35,6 +35,7 @@ window.PHRASES = [
   { id: 64, cat: "food", ko: "물 주세요",           pinyin: "qǐng gěi wǒ shuǐ",       hanzi: "请给我水" },
   { id: 65, cat: "food", ko: "계산해주세요",        pinyin: "mǎidān",                 hanzi: "买单" },
   { id: 66, cat: "food", ko: "맛있어요",            pinyin: "hěn hǎochī",             hanzi: "很好吃" },
+  { id: 71, cat: "food", ko: "맛있는 거 추천해주세요", pinyin: "yǒu shénme hǎochī de tuījiàn ma?", hanzi: "有什么好吃的推荐吗？" },
   { id: 67, cat: "food", ko: "포장해주세요",        pinyin: "dǎbāo",                  hanzi: "打包" },
   { id: 69, cat: "food", ko: "먹고 갈게요 (여기서 먹어요)", pinyin: "zài zhèr chī",     hanzi: "在这儿吃" },
   { id: 70, cat: "food", ko: "차가운 걸로 주세요 (얼음 넣어서)", pinyin: "wǒ yào bīng de", hanzi: "我要冰的" },
