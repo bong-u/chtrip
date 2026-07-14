@@ -19,6 +19,7 @@ window.PHRASES = [
   { id: 29, cat: "basic", ko: "안녕히 가세요",      pinyin: "zàijiàn",      hanzi: "再见" },
   { id: 30, cat: "basic", ko: "중국어 잘 못해요",   pinyin: "wǒ bú huì shuō zhōngwén", hanzi: "我不会说中文" },
   { id: 33, cat: "basic", ko: "못 알아듣겠어요",    pinyin: "tīng bu dǒng",           hanzi: "听不懂" },
+  { id: 34, cat: "basic", ko: "잠깐만요, 번역기 쓸게요", pinyin: "děng yíxià, wǒ yòng fānyì", hanzi: "等一下，我用翻译" },
 
   // ── 쇼핑 ─────────────────────────────
   { id: 40, cat: "shopping", ko: "이거 얼마예요?",   pinyin: "zhège duōshao qián?",   hanzi: "这个多少钱？" },
