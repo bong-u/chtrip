@@ -5,6 +5,8 @@ window.PHRASES = [
   // ── 숫자 (기본에 포함, 이어서 낭독) ────
   { id: 1,  cat: "basic", ko: "숫자 1~10", pinyin: "yī, èr, sān, sì, wǔ, liù, qī, bā, jiǔ, shí", hanzi: "一，二，三，四，五，六，七，八，九，十" },
   { id: 2,  cat: "basic", ko: "십·백·천",           pinyin: "shí, yìbǎi, yìqiān",              hanzi: "十，一百，一千" },
+  { id: 3,  cat: "basic", ko: "1개, 2개, 3개",      pinyin: "yí ge, liǎng ge, sān ge",         hanzi: "一个，两个，三个" },
+  { id: 4,  cat: "basic", ko: "1명, 2명, 3명",      pinyin: "yí ge rén, liǎng ge rén, sān ge rén", hanzi: "一个人，两个人，三个人" },
 
   // ── 기본 인사·표현 ────────────────────
   { id: 20, cat: "basic", ko: "안녕하세요",        pinyin: "nǐ hǎo",       hanzi: "你好" },
