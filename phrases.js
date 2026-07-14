@@ -16,7 +16,9 @@ window.PHRASES = [
   { id: 24, cat: "basic", ko: "천만에요",          pinyin: "bú kèqi",      hanzi: "不客气" },
   { id: 25, cat: "basic", ko: "죄송합니다",        pinyin: "duìbuqǐ",      hanzi: "对不起" },
   { id: 26, cat: "basic", ko: "괜찮아요",          pinyin: "méi guānxi",   hanzi: "没关系" },
-  { id: 27, cat: "basic", ko: "네 / 맞아요",       pinyin: "duì",          hanzi: "对" },
+  { id: 27, cat: "basic", ko: "네, 알겠습니다",     pinyin: "hǎo de",       hanzi: "好的" },
+  { id: 31, cat: "basic", ko: "네, 맞습니다",       pinyin: "duì de",       hanzi: "对的" },
+  { id: 32, cat: "basic", ko: "있어요 / 없어요",    pinyin: "yǒu, méiyǒu",  hanzi: "有，没有" },
   { id: 28, cat: "basic", ko: "아니요 / 필요없어요", pinyin: "bú yòng",     hanzi: "不用" },
   { id: 29, cat: "basic", ko: "안녕히 가세요",      pinyin: "zàijiàn",      hanzi: "再见" },
   { id: 30, cat: "basic", ko: "중국어 잘 못해요",   pinyin: "wǒ bú huì shuō zhōngwén", hanzi: "我不会说中文" },
@@ -60,6 +62,7 @@ window.PHRASES = [
   { id: 105, cat: "time", ko: "20분 뒤",               pinyin: "èrshí fēnzhōng hòu",            hanzi: "二十分钟后" },
   { id: 106, cat: "time", ko: "1시간 / 반 시간",       pinyin: "yí ge xiǎoshí, bàn ge xiǎoshí",  hanzi: "一个小时，半个小时" },
   { id: 107, cat: "time", ko: "대략 20분요",           pinyin: "dàgài èrshí fēnzhōng",          hanzi: "大概二十分钟" },
+  { id: 108, cat: "time", ko: "오늘 / 내일 / 모레",     pinyin: "jīntiān, míngtiān, hòutiān",     hanzi: "今天，明天，后天" },
 
 ];
 

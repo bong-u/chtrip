@@ -1,5 +1,5 @@
 // 오프라인 캐싱 — 중국 현지에서 데이터 없이도 실행되도록
-const CACHE = "chtrip-v8";
+const CACHE = "chtrip-v10";
 const ASSETS = [
   "./",
   "./index.html",
